@@ -97,14 +97,6 @@ function fnLaunchIE(sUrl)
 	WshShell.AppActivate "IE"
 end function
 
-'-------------------------------
-'Function Name 	:	fnkeypress
-'Variables		:	strValue (key value provided)
-'Description	:	This function is to press any key event. 
-'-------------------------------
-function fnkeypress(strValue)
-	WshShell.SendKeys strValue
-end function
 
 '-------------------------------
 'Function Name 	:	fnOpenExcel
@@ -171,10 +163,10 @@ function fnEnterValueinWeb(strTestData)
 	
 	WshShell.AppActivate "IE" 
 
-	for i = 1 to 8 
-		fnkeypress "{TAB}"
-	next
-	fnkeypress "{ENTER}"
+	For Each btn In ie.document.getElementsByClassName("btn btn-default")
+		If btn.type = "submit" Then btn.Click()
+	Next
+
 	WshShell.AppActivate "IE" 
 	WScript.Sleep 5000
 	fnReadPage()
@@ -200,6 +192,7 @@ function fnReadPage()
 	Next 
 
 	fnOpenNotepad strFileName, ie.Document.body.innertext
+	
 end function
 
 '-------------------------------
