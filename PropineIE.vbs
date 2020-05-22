@@ -26,6 +26,7 @@ outCol = 5
 resultCol = 6 
 intPassCount = 0
 intFailCount = 0 
+rloop = 2
 
 
 '-------------------------------------------Master Scritp Call---------------------------------
@@ -33,8 +34,11 @@ fnCleanUp()
 fnOpenExcel strExcelPath
 fnRowColCount()
 sTestExcelPath = sOutPutPath & "\TestResult_" & Year(Now) &month(now) &day(now) &hour(now) &minute(now) &second(now) & ".xlsx"
+
+'Create copy of Input Excel as Test Result Excel to store result
 fnCopyFile strExcelPath, sTestExcelPath
-rloop = 2
+
+'Launches new Internet Explorer window
 fnLaunchIE strUrl
 
 	'This segment is to perform sanity test, if sanity fails test will stop else will continue. 
@@ -44,6 +48,7 @@ fnLaunchIE strUrl
 	fnReadtext strFileName1
 	fnWriteValueinExcelCell rloop, outCol, strnewValue
 	WScript.Sleep 5000
+	'Sanity Ends here 
 
 	'This loop will iterate for all test scenario in Input Sheet. 
 	fnCloseExcel()
@@ -58,6 +63,7 @@ fnLaunchIE strUrl
 			fnCloseExcel()
 	next
 	
+'Create HTML Report and populate the data. 
 fnCreateHTMLReport()
 msgbox "Execution Completed"
 
