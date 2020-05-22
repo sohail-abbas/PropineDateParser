@@ -13,8 +13,10 @@ Dim intPassCount
 Dim intFailCount
 Dim sTestExcelPath
 
-strUrl = "https://vast-dawn-73245.herokuapp.com/"
 set WshShell = WScript.CreateObject("WScript.Shell") 
+
+'Set all path variables 
+strUrl = "https://vast-dawn-73245.herokuapp.com/"
 sOutPutPath = "C:\Personal\Propine\Output"
 strExcelPath = "C:\Personal\Propine\TestSheet.xlsx"
 strReportTemplate = "C:\Personal\Propine\Template\reportTemplate.html"
