@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Propine ARTF Report</title>
+</head>
+
+<body>
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/">
+      <img src="C:\Personal\Propine\Template\ARTF.jpg" alt="PROPINE">
+    </a>
+  </div>
+</div>
+<pre></pre>
+<table cellpadding="0" cellspacing="0" width="98%">
+	<tr>
+		<th style="width:20%; text-align:left">Overall Execution status bar</th>
+		<th style="background-color:#008000;text-align:center; width:40%; border: 1px solid green"><font color="#ffffff"><b>Pass (50%)</th>
+		<th style="background-color:#ff0000;text-align:center; width:40%; border: 1px solid red"><font color="#ffffff"><b>Fail (50%)</th>
+	</tr>
+	<tr><td> </td><td> </td><td> </td></tr>
+</table>
+<pre> </pre>
+<table cellpadding="0" cellspacing="0" width="98%">
+	<tr>
+		<th style="width:100%; text-align:left">Detailed Summary Report</th>
+	</tr>
+</table>
+    <table cellpadding="0" cellspacing="0" width="98%" align = "left" style ="border: 2px solid black">
+	  <tr style="text-align:left; background-color:#448888">
+		<th style="width:3%"><font color="#ffffff">Sl.No.</th>
+		<th style="width:29%"><font color="#ffffff">Test Scenario</th>
+		<th style="width:16%"><font color="#ffffff">Test Input Data</th>
+		<th style="width:21%"><font color="#ffffff">Expected Result</th>
+		<th style="width:21%"><font color="#ffffff">Actual Result</th>
+		<th style="width:10%"><font color="#ffffff">Pass/Fail</th>
+	  </tr>
+	  <tr>
+
+
+<td>1</td>
+<td>Scenario for date in DD-MMM-YYYY format </td>
+<td>27-Jun-2020</td>
+<td>Sat Jun 27 2020 00:00:00 GMT+0000</td>
+<td>Sat Jun 27 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>2</td>
+<td>Scenario for date in MM/DD/YYYY format </td>
+<td>6/28/2020</td>
+<td>Sun Jun 28 2020 00:00:00 GMT+0000</td>
+<td>Sun Jun 28 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>3</td>
+<td>Scenario for date in DD/MM/YYYY format </td>
+<td>28/6/2020</td>
+<td>Sun Jun 28 2020 00:00:00 GMT+0000</td>
+<td>Invalid date </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>4</td>
+<td>Scenario for date in Mon DD, YYYY format </td>
+<td>June 29, 2020</td>
+<td>Mon Jun 29 2020 00:00:00 GMT+0000</td>
+<td>Mon Jun 29 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>5</td>
+<td>Scenario for date in Mon-YY format </td>
+<td>June-20</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000</td>
+<td>Wed Jun 20 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>6</td>
+<td>Scenario for date in MM-YY format </td>
+<td>Jul-20</td>
+<td>Wed Jul 01 2020 00:00:00 GMT+0000</td>
+<td>Fri Jul 20 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>7</td>
+<td>Scenario for date in DD-MMM-YY format </td>
+<td>27-Jun-20</td>
+<td>Sat Jun 27 2020 00:00:00 GMT+0000</td>
+<td>Sat Jun 27 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>8</td>
+<td>Scenario for date in DD-Mon format </td>
+<td>28-Jun</td>
+<td>Sun Jun 28 2020 00:00:00 GMT+0000</td>
+<td>Thu Jun 28 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>9</td>
+<td>Scenario for date in MM/DD/YY format </td>
+<td>06/29/20</td>
+<td>Mon Jun 29 2020 00:00:00 GMT+0000</td>
+<td>Mon Jun 29 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>10</td>
+<td>Scenario for date in Day, Month DD, YYYY format </td>
+<td>Tuesday, June 30, 2020</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>11</td>
+<td>Scenario for date in Day, Month DD, YYYY format </td>
+<td>Tue, June 30, 2020</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>12</td>
+<td>Scenario for date in MM/DD/YYYY format </td>
+<td>7/1/2020</td>
+<td>Wed Jul 01 2020 00:00:00 GMT+0000</td>
+<td>Wed Jul 01 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>13</td>
+<td>Scenario for date in MM/DD/YYYY format </td>
+<td>01/07/20</td>
+<td>Tue Jan 07 2020 00:00:00 GMT+0000</td>
+<td>Tue Jan 07 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>14</td>
+<td>Scenario for date in M-YY format </td>
+<td>J-20</td>
+<td>Sun Jun 28 2020 00:00:00 GMT+0000</td>
+<td>Invalid date </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>15</td>
+<td>Scenario for date in M format </td>
+<td>J</td>
+<td>Mon Jun 29 2020 00:00:00 GMT+0000</td>
+<td>Invalid date </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>16</td>
+<td>Scenario for date in DD-MMM-YY format </td>
+<td>30-Jun-20</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000</td>
+<td>Tue Jun 30 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>17</td>
+<td>Scenario for Invalid date in DD-MMM-YYYY format </td>
+<td>31-Jun-2020</td>
+<td>Invalid date</td>
+<td>Wed Jul 01 2020 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>18</td>
+<td>Scenario for date in DD-Mon format </td>
+<td>28-Feb</td>
+<td>Fri Feb 28 2020 00:00:00 GMT+0000</td>
+<td>Wed Feb 28 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>19</td>
+<td>Scenario for date in DDMon format </td>
+<td>28Feb</td>
+<td>Fri Feb 28 2020 00:00:00 GMT+0000</td>
+<td>Wed Feb 28 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>20</td>
+<td>Scenario for Invalid date in no format </td>
+<td>0</td>
+<td>Invalid date</td>
+<td>Sat Jan 01 2000 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>21</td>
+<td>Scenario for Invalid date in no format </td>
+<td>1</td>
+<td>Invalid date</td>
+<td>Mon Jan 01 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>22</td>
+<td>Scenario for Invalid date in no format </td>
+<td>2</td>
+<td>Invalid date</td>
+<td>Thu Feb 01 2001 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>23</td>
+<td>Scenario for Invalid date as blank</td>
+<td> </td>
+<td>Invalid date</td>
+<td>Invalid date </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>24</td>
+<td>Scenario for Invalid date as random number</td>
+<td>1234</td>
+<td>Invalid date</td>
+<td>Sun Jan 01 1234 00:00:00 GMT+0000 </td>
+<td style="background-color:#ff0000;text-align:center"><font color="#ffffff"><b>FAIL</td>
+</tr><tr>
+<td>25</td>
+<td>Scenario for Invalid date as random text</td>
+<td>asdf</td>
+<td>Invalid date</td>
+<td>Invalid date </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+<td>26</td>
+<td>Scenario for Invalid date as random abstract</td>
+<td>28-MM-2001</td>
+<td>Invalid date</td>
+<td>Invalid date </td>
+<td style="background-color:#008000;text-align:center"><font color="#ffffff"><b>PASS</td>
+</tr><tr>
+</tr></table><pre> </pre></body></html>
+
+
+
+
+
